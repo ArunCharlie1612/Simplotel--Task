@@ -1,2 +1,6 @@
 # Simplotel--Task
 This is the task given by SImplotel company using HTML and CSS only without using any external Library like bootstrap, tailwind etc....
+
+https://aruncharlie1612.github.io/Simplotel--Task/
+
+Click the above link for the Quick Preview.....
