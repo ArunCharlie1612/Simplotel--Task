@@ -1,0 +1,340 @@
+/* Font Awesome Icons */
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Roboto:wght@100;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+li{
+    font-family: "Instrument",serif;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+h2{
+    font-family:Arial, Helvetica, sans-serif;
+}
+p{
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.main{
+    position: relative;
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.hero-section{
+    background: url(../Assets/Images/hero-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 70vh;
+}
+
+/* Header Section */
+header{
+    position: relative;
+    width: 100%;
+    top: 0;
+    padding: 15px 100px;
+    background-color: #fff;
+}
+header .nav-bar,header .nav-bar .nav-items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .soc-icons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+header .soc-icons li{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-size: 18px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+header .soc-icons li a i{
+    color: #000;
+}
+header .nav-bar .nav-items li{
+    list-style-type: none;
+}
+header .nav-bar .nav-items li a{
+    color: #000;
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 2px 35px;
+    font-size: 18px;
+}
+header .nav-bar .nav-items li a:not(:last-child){
+    margin-right: 30px;
+}
+/* End Header Section */
+
+
+/* main Section */
+.hero-content{
+    position: relative;
+    max-width: 530px;
+    margin: 200px 100px;
+    padding: 35px;
+    background-color: #e44550;
+    opacity: 0.7;
+    
+}
+.hero-content .hero-info{
+    position: relative;
+}
+.hero-content .hero-info h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight:600;
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 70px;
+    opacity:2;
+}
+.hero-content .hero-info p{
+    font-size: 18px;
+    color: #fff;
+    word-spacing: 2px;   
+}
+label{
+    display: none;
+}
+#check{
+    z-index: 3;
+    display: none;
+}
+
+/* End main Section */
+
+
+
+/* Order Section */
+.order-section{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: rgb(235,33,186);
+background: linear-gradient(90deg, rgba(235,33,186,1) 4%, rgba(212,209,15,1) 100%);
+}
+.order-section h2{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 17px;
+    color: #fff;
+    letter-spacing: 3px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 110px 15px 110px;
+   
+}
+.card-item{
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 40px;
+    border-radius: 0 60px;
+    width: 340px;
+}
+.card-item:hover{
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+.card-img img{
+    display: block;
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    padding: 20px;
+    border-radius: 0 60px 0 0;
+
+}
+.card-content{
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    text-align: center;
+}
+.card-content h2{
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-family: roboto;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+}
+.card-content p{
+    font-size: 14px;
+    color: #111;
+    line-height: 1.5;
+    margin-top: 5px;
+    padding: 10px;
+}
+.order-section .order-btn{
+    color: #000;
+    font-size: 18px;
+    padding: 15px 58px;
+    border-radius: 30px;
+    font-weight: 700;
+    border: none;
+    background-color: #ffc9b8;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+.order-section .order-btn:hover{
+    background-color: #ffe5db;
+}
+
+/* End  Order Section */
+
+
+/* Responsiveness */
+@media (max-width: 1100px){
+    header .nav-bar,header .soc-icons{
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+    label{
+        display: flex;
+        justify-content: flex-end;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.4s;
+        transition-property: color;
+    }
+    label .menu-btn:hover{
+        color: #e44550;
+    }
+    label .close-btn:hover{
+        color: #000;
+    }
+    label .close-btn{
+        display: none;
+    }
+    #check:checked ~ header div{
+        display: flex;
+        position: fixed;
+        z-index: 2;
+        background-color: #e44550;
+        color: #fff;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    header .nav-bar-big .nav-items{
+        display: block;
+    }
+    header .nav-bar-big .nav-items li{
+        letter-spacing: 2px;
+        padding: 5px 30px;
+        margin: 40px;
+        font-size: 25px;
+        font-weight: 500;
+        text-align: center;
+        transition: 0.4s ease-out;
+        transition-property: background-color;
+
+    }
+    header .nav-bar-big .nav-items li:hover{
+        background-color: #000;
+        border-radius: 20px;
+    }
+
+    #check:checked ~ header .nav-bar-big li a{
+        color: #fff;
+    }
+    #check:checked ~ header label .close-btn{
+        z-index: 2;
+        display: block;
+        position: absolute;
+        top: 32px;
+        right: 100px;
+    }
+    #check:checked ~ header label .menu-btn{
+        display: none;
+    } 
+    .hero-content .hero-info h2{
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 50px;
+    }
+    .hero-content .hero-info p{
+        font-size: 16px;
+    }
+    .card-img img{
+        height: 15rem;
+    }
+    .cards{
+        padding: 80px 0px;
+    }
+    .card-item{
+        margin: 10px;
+    }
+
+
+}
+
+/* Mobile Phones */
+
+@media (max-width: 320px){
+    header{
+        padding: 15px 40px;
+    }
+    header .nav-bar-big .nav-items li{
+        margin: 10px;
+    }
+    #check:checked ~ header label .close-btn{
+        position: absolute;
+        top: 15px;
+        right: 48px;
+    }
+    .hero-content .hero-info h2{
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+    .hero-content .hero-info p{
+        font-size: 14px;
+    }
+    
+    .hero-section .hero-content{
+        margin: 120px 25px;
+        padding: 10px;
+    }
+
+    .cards{
+        display: block;
+    }
+
+    .card-item{
+        width: 290px;
+        margin: 30px 10px;
+    }
+}
+

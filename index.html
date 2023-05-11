@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simplotel Technologies</title>
+
+    <!-- Include Style File -->
+    <link rel="stylesheet" href="Styles/index.css">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <section class="main" id="home">
+        <input type="checkbox" id="check">
+        <header>
+            <div class="nav-bar-big" id="navbar">
+                <div class="nav-bar">
+                    <ul class="nav-items">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#order">Order</a></li>
+                        <li><a href="#">Food</a></li>
+                        <li><a href="#">Restaurant</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <ul class="soc-icons">
+                        <li><a href=""><i class="fa-solid fa-square-phone"></i></a></li>
+
+                        <li><a href=""></a><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    </ul>
+                </div>
+                <label for="">
+                    <i class="fa-solid fa-bars menu-btn" onclick="myFunction()"></i>
+                    <i class="fa-sharp fa-solid fa-xmark close-btn" onclick="myCloseFunction()"></i>
+                </label>
+            </div>
+            
+        </header>
+        <div class="hero-section">
+            <div class="hero-content">
+                <div class="hero-info">
+                    <h2>Lorem Ispum</h2>
+                    <p>Lorem Ipsum has been the industry's standard dummy
+                        text ever since the 1500s, when an unknown printer took
+                        a galley of type and scrambled it to make a type
+                        specimen book.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="order-section" id="order">
+        <h2>Order Now</h2>
+        <div class="cards">
+
+            <div class="card-item">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="Assets/Images/burger.jpg" alt="Burger">
+                    </div>
+                    <div class="card-content">
+                        <h2>Burger</h2>
+                        <p>Lorem Ispum has been the industry's standard dummy text</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-item">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="Assets/Images/pizza.jpg" alt="Pizza">
+                    </div>
+                    <div class="card-content">
+                        <h2>Pizza</h2>
+                        <p>Lorem Ispum has been the industry's standard dummy text</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-item">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="Assets/Images/pasta.jpg" alt="Pasta">
+                    </div>
+                    <div class="card-content">
+                        <h2>Pasta</h2>
+                        <p>Lorem Ispum has been the industry's standard dummy text</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="order-btn">Order</button>
+    </section>
+    <script>
+        function myFunction(){
+				var x = document.getElementById('check');
+				if(x == 'checked'){
+                    x.checked = false;
+				}
+                else{
+                    x.checked = true;
+                }
+            }
+            function myCloseFunction(){
+				var x = document.getElementById('check');
+				if(x == 'unchecked'){
+                    x.checked = true;
+				}
+                else{
+                    x.checked = false;
+                }
+            }
+
+    </script>
+</body>
+</html>
